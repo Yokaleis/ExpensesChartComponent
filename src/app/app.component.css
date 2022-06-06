@@ -1,0 +1,93 @@
+.content{
+    width: 90%;
+    height: auto;
+    margin:20px auto;
+    display:flex;
+    flex-flow: column;
+    padding:5px;
+    
+}
+.content .card-hero{
+    width: 30%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    text-align: initial;
+    background: #ec755d;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.content .card-hero .title{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 100;
+}
+.content .card-hero .total-balance{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.content .card-hero .balance{
+    position: relative;
+    right: 35px;
+}
+.content .card-hero .profile{
+    position: relative;
+    left: 65px;
+}
+.content .card-hero .profile .figurebg{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50px;
+}
+.content .card {
+    width:30%;
+    height:450px;
+    margin:auto;
+    text-align: center;
+    background: #FFF;
+    border-radius: 10px;
+}
+.content .divider{
+    width: 90%;
+    height: 1px;
+    background-color: #e2e2e2;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.content .totales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content .totales .total{
+    position: relative;
+    right: 35px;
+}
+.content .totales .total .descripcion{
+    color: #c7c7c7;
+    font-size: 12px;
+    font-weight: bold;
+}
+.content .totales .total .totalResultados{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.content .totales .percent .percent-number{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .totales .percent .descripcion{
+    color: #c7c7c7;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -10px;
+}
