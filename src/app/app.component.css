@@ -37,12 +37,15 @@
 .content .card-hero .profile{
     position: relative;
     left: 65px;
+    display: flex;
+    align-items: center;
 }
 .content .card-hero .profile .figurebg{
     width: 50px;
     height: 50px;
     background-color: #000;
     border-radius: 50px;
+    vertical-align: middle;
 }
 .content .card {
     width:30%;
