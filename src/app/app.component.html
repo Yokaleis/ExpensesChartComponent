@@ -1,50 +1,52 @@
 
 <div class="content">
-  <div class="card-hero">
-    <div class="balance">
-      <p class="title">My balance</p>
-      <p class="total-balance">$927.48</p>
-    </div>
-    <div class="profile">
-      <img class="figurebg" src="https://pbs.twimg.com/profile_images/1530298577532207104/apOHYe0q_400x400.jpg" alt="" srcset="">
-    </div>
-  </div>
-  <div class="card">
-    <div class="title">
-      <h2>Spending - Last 7 days</h2>
-    </div>
-    <div class="graphic">
-      <ngx-charts-bar-vertical
-      [view]="view"
-      [scheme]="colorScheme"
-      [results]="single"
-      [activeEntries]="[]"
-      [gradient]="gradient"
-      [xAxis]="showXAxis"
-      
-      [legend]="showLegend"
-      [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel"
-      [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="yAxisLabel"
-      [maxYAxisTickLength] = "16"
-      (select)="onSelect($event)">
-    </ngx-charts-bar-vertical>
-    </div>
-    <ng-template #tooltipTemplate let-model="model">
-      <div class="tooltip">
-        {{model.tooltipText}}
+  <div class="featured">
+    <div class="card-hero">
+      <div class="balance">
+        <p class="title">My balance</p>
+        <p class="total-balance">$927.48</p>
       </div>
-    </ng-template>
-    <div class="divider"></div>
-    <div class="totales">
-      <div class="total">
-        <p class="descripcion">Total this mount</p>
-        <p class="totalResultados">${{pagosDatas}}</p>
+      <div class="profile">
+        <img class="figurebg" src="https://pbs.twimg.com/profile_images/1530298577532207104/apOHYe0q_400x400.jpg" alt="" srcset="">
       </div>
-      <div class="percent">
-        <p class="percent-number">+2.4%</p>
-        <p class="descripcion">from last mount</p>
+    </div>
+    <div class="card">
+      <div class="title">
+        <h2>Spending - Last 7 days</h2>
+      </div>
+      <div class="graphic">
+        <ngx-charts-bar-vertical
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="single"
+        [activeEntries]="[]"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [maxYAxisTickLength] = "16"
+        (select)="onSelect($event)">
+      </ngx-charts-bar-vertical>
+      </div>
+      <ng-template #tooltipTemplate let-model="model">
+        <div class="tooltip">
+          {{model.tooltipText}}
+        </div>
+      </ng-template>
+      <div class="divider"></div>
+      <div class="totales">
+        <div class="total">
+          <p class="descripcion">Total this mount</p>
+          <p class="totalResultados">${{pagosDatas}}</p>
+        </div>
+        <div class="percent">
+          <p class="percent-number">+2.4%</p>
+          <p class="descripcion">from last mount</p>
+        </div>
       </div>
     </div>
   </div>
